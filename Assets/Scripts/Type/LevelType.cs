@@ -6,6 +6,7 @@ namespace ExampleTemplate
     {
         None,
         TestLevel,
+        TestLevelAlex
         
     }
 }
