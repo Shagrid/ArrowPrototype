@@ -11,6 +11,9 @@ namespace ExampleTemplate
             {
                 CharacterType.Test, "Prefabs/Character/Prefabs_Character_SphereCharacter"
             },
+            {
+                CharacterType.Archer, "Prefabs/Character/SM_Chr_Rider_01"
+            },
             
         };
 
