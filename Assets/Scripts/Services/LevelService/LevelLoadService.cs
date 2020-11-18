@@ -1,20 +1,14 @@
 ﻿using UnityEngine;
 
-namespace ExampleTemplate.LevelService
+namespace ExampleTemplate
 {
     public class LevelLoadService : Service
     {
         private GameObject _currentLevel;
-        
 
         public void LoadLevel(LevelType levelType, EnemyType enemyType, CharacterType characterType)
         {
-            if (_currentLevel != null)
-            {
-                GameObject.Destroy(_currentLevel);
-                GameObject.Destroy(Data.Instance.Character.CharacterBehaviour.gameObject);
-                GameObject.Destroy(Data.Instance.EnemiesData.EnemyBehaviour.gameObject);
-            }
+            DestroyLevel();
             _currentLevel = GameObject.Instantiate(Data.Instance.LevelsData.GetPrefabLevel(levelType));
             var characterPosition = GameObject.FindWithTag(TagManager.GetTag(TagType.CharacterPosition)).transform;
             var enemyPosition = GameObject.FindWithTag(TagManager.GetTag(TagType.EnemyPosition)).transform;
@@ -22,5 +16,19 @@ namespace ExampleTemplate.LevelService
             Data.Instance.EnemiesData.Initialization(enemyType, enemyPosition);
             Time.timeScale = 1;
         }
+
+        public void DestroyLevel()
+        {
+            if (_currentLevel == null) return;
+            GameObject.Destroy(_currentLevel);
+            GameObject.Destroy(Data.Instance.Character.CharacterBehaviour.gameObject);
+            GameObject.Destroy(Data.Instance.EnemiesData.EnemyBehaviour.gameObject);
+        }
+
+        public bool IsLvlLoaded()
+        {
+            return _currentLevel != null;
+        }
+        
     }
 }

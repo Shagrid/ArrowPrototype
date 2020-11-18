@@ -266,7 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelType: 1
   _enemyType: 1
-  _characterType: 1
+  _characterType: 2
 --- !u!1 &1093891452
 GameObject:
   m_ObjectHideFlags: 0

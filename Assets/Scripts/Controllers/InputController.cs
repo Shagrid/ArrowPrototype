@@ -5,18 +5,21 @@ namespace ExampleTemplate
 {
     public sealed class InputController : IExecute
     {
-        // private readonly CharacterData _characterData;
-        //
-        // public InputController()
-        // {
-        //     _characterData = Data.Instance.Character;
-        //     _characterData.Initialization();
-        // }
-        //
-        // #region IExecute
-        //
+         private readonly CharacterData _characterData;
+        
+        public InputController()
+        {
+            _characterData = Data.Instance.Character;
+        }
+        
+         #region IExecute
+        
         public void Execute()
         {
+            if (!Services.Instance.LevelLoadService.IsLvlLoaded())
+            {
+                return;
+            }
         //     Vector2 inputAxis;
         //     inputAxis.x = Input.GetAxis("Horizontal");
         //     inputAxis.y = Input.GetAxis("Vertical");
@@ -26,7 +29,7 @@ namespace ExampleTemplate
         //         _characterData.CharacterBehaviour.Move(inputAxis);
         //     }            
         }
-        //
-        // #endregion
+        
+         #endregion
     }
 }
