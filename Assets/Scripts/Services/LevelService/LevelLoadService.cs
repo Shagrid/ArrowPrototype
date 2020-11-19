@@ -14,6 +14,7 @@ namespace ExampleTemplate
             var enemyPosition = GameObject.FindWithTag(TagManager.GetTag(TagType.EnemyPosition)).transform;
             Data.Instance.Character.Initialization(characterType, characterPosition);
             Data.Instance.EnemiesData.Initialization(enemyType, enemyPosition);
+            Data.Instance.Character.CharacterBehaviour.SetGameMode(GameModeType.Start);
             Time.timeScale = 1;
         }
 
