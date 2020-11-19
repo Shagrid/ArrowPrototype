@@ -24,7 +24,8 @@
         
         public Controllers()
         {
-            _initializations = new IInitialization[0];
+            _initializations = new IInitialization[1];
+            _initializations[0] = new LoadLevelController();
             _executeControllers = new IExecute[2];
             _executeControllers[0] = new TimeRemainingController();
             _executeControllers[1] = new InputController();

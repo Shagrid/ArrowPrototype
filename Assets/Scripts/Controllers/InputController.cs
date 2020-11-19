@@ -56,8 +56,8 @@ namespace ExampleTemplate
              if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
              { 
                  Vector2 inputAxis;
-                 inputAxis.x = Input.GetAxis("Mouse X");
-                 inputAxis.y = Input.GetAxis("Mouse Y");
+                 inputAxis.x = Input.GetAxis("Mouse Y");
+                 inputAxis.y = Input.GetAxis("Mouse X");
                  if (inputAxis.x != 0 || inputAxis.y != 0)
                  {
                      _characterData.ArrowBehaviour.Turn(inputAxis);
