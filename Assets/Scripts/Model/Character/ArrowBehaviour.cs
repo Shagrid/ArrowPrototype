@@ -1,4 +1,5 @@
 ﻿using System;
+using Model.Enemy;
 using UnityEngine;
 
 namespace ExampleTemplate
@@ -7,10 +8,23 @@ namespace ExampleTemplate
     {
         private CharacterData _characterData;
         private Vector3 _currentEulerAngles;
-        
+
         private void Awake()
         {
             _characterData = Data.Instance.Character;
+        }
+
+        private void OnCollisionEnter(Collision other)
+        {
+            var enemy = other.transform.root.GetComponent<EnemyBehaviour>();
+            if (enemy != null)
+            {
+                enemy.Die();
+                var rb =  other.transform.GetComponent<Rigidbody>();
+                rb.AddForce(transform.TransformDirection(Vector3.forward) * _characterData.GetForceimpulse() * rb.mass, ForceMode.Impulse);
+                _characterData.CharacterBehaviour.SetGameMode(GameModeType.Ragdoll);
+                gameObject.SetActive(false);
+            }
         }
 
         public void Fly()
@@ -25,5 +39,7 @@ namespace ExampleTemplate
             _currentEulerAngles.y += axis.y * _characterData.GetTurnSensivity();
             transform.eulerAngles = _currentEulerAngles;
         }
+        
+        
     }
 }
