@@ -4542,6 +4542,18 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000056266785, y: 0.8434789, z: -0.0045480877}
     m_Extent: {x: 1.0246199, y: 0.9445722, z: 0.2994464}
   m_DirtyAABB: 0
+--- !u!114 &3592447971800009720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518426567183329448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc55cbeddc9a4687a91fc002aed7117e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &86876138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4813,23 +4825,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 49.064003
       objectReference: {fileID: 0}
-    - target: {fileID: 4789443884669178, guid: 67c60fa84a9c4854c8d4a1c85873e21d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.2248291
-      objectReference: {fileID: 0}
-    - target: {fileID: 4789443884669178, guid: 67c60fa84a9c4854c8d4a1c85873e21d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.2248291
-      objectReference: {fileID: 0}
-    - target: {fileID: 4789443884669178, guid: 67c60fa84a9c4854c8d4a1c85873e21d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.2248291
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67c60fa84a9c4854c8d4a1c85873e21d, type: 3}
 --- !u!4 &514599338995143684 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4789443884669178, guid: 67c60fa84a9c4854c8d4a1c85873e21d,
+    type: 3}
+  m_PrefabInstance: {fileID: 519385817192205566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &518426567183329448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1381610650362966, guid: 67c60fa84a9c4854c8d4a1c85873e21d,
     type: 3}
   m_PrefabInstance: {fileID: 519385817192205566}
   m_PrefabAsset: {fileID: 0}

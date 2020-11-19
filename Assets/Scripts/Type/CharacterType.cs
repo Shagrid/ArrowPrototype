@@ -3,6 +3,7 @@
     public enum CharacterType
     {
         None,
-        Test
+        Test,
+        Archer
     }
 }
