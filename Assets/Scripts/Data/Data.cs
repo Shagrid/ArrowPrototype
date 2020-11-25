@@ -17,10 +17,12 @@ namespace ExampleTemplate
         [SerializeField] private string _characterDataPath;
         [SerializeField] private string _levelsDataPath;
         [SerializeField] private string _enemiesDataPath;
+        [SerializeField] private string _barriersDataPath;
         private static ShakesData _shake;
         private static CharacterData _characterData;
         private static LevelsData _levelsData;
         private static EnemiesData _enemiesData;
+        private static BarriersData _barriersData;
         private static readonly Lazy<Data> _instance = new Lazy<Data>(() => Load<Data>("Data/" + typeof(Data).Name));
         
         #endregion
@@ -79,6 +81,19 @@ namespace ExampleTemplate
                 }
 
                 return _enemiesData;
+            }
+        }
+        
+        public BarriersData BarriersData
+        {
+            get
+            {
+                if (_barriersData == null)
+                {
+                    _barriersData = Load<BarriersData>("Data/" + Instance._barriersDataPath);
+                }
+
+                return _barriersData;
             }
         }
         #endregion

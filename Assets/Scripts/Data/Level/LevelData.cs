@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace ExampleTemplate.Level
+namespace ExampleTemplate
 {
     [Serializable]
     public sealed class LevelData

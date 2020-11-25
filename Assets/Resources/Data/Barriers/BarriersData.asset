@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b35a38e01754311b96a8bea7176388e, type: 3}
-  m_Name: Data
+  m_Script: {fileID: 11500000, guid: 41781b622eb84e6cbaad7ab5a7819947, type: 3}
+  m_Name: BarriersData
   m_EditorClassIdentifier: 
-  _shakeDataPath: 
-  _characterDataPath: Character/CharacterData
-  _levelsDataPath: Levels/LevelsData
-  _enemiesDataPath: Enemies/EnemiesData
-  _barriersDataPath: Barriers/BarriersData
+  _barriers:
+  - BarrierType: 1
+    Coefficient: 1
+  - BarrierType: 2
+    Coefficient: 1
