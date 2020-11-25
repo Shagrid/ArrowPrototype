@@ -4542,6 +4542,22 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.000056266785, y: 0.8434789, z: -0.0045480877}
     m_Extent: {x: 1.0246199, y: 0.9445722, z: 0.2994464}
   m_DirtyAABB: 0
+--- !u!54 &7287870502830426566
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518426567183329448}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!114 &3592447971800009720
 MonoBehaviour:
   m_ObjectHideFlags: 0

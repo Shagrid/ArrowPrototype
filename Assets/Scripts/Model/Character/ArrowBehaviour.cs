@@ -21,7 +21,7 @@ namespace ExampleTemplate
             {
                 enemy.Die();
                 var rb =  other.transform.GetComponent<Rigidbody>();
-                rb.AddForce(transform.TransformDirection(Vector3.forward) * _characterData.GetForceimpulse() * rb.mass, ForceMode.Impulse);
+                rb.AddForce(transform.TransformDirection(Vector3.forward) * _characterData.GetForceimpulse());
                 _characterData.CharacterBehaviour.SetGameMode(GameModeType.Ragdoll);
                 gameObject.SetActive(false);
             }

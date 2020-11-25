@@ -7,10 +7,12 @@ namespace ExampleTemplate
     public sealed class InputController : IExecute
     {
          private readonly CharacterData _characterData;
+         private Rigidbody _arrowRb;
          
          public InputController()
         {
             _characterData = Data.Instance.Character;
+            
         }
         
          #region IExecute
@@ -46,6 +48,8 @@ namespace ExampleTemplate
                  {
                      _characterData.CharacterBehaviour.SetGameMode(GameModeType.ArrowFly);
                      _characterData.ArrowBehaviour.transform.SetParent(null);
+                     _arrowRb = _characterData.ArrowBehaviour.transform.GetComponent<Rigidbody>();
+                     _arrowRb.isKinematic = false;
                  }
                  
          }
