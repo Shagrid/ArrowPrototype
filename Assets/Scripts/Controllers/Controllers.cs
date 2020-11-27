@@ -26,9 +26,10 @@
         {
             _initializations = new IInitialization[1];
             _initializations[0] = new LoadLevelController();
-            _executeControllers = new IExecute[2];
+            _executeControllers = new IExecute[3];
             _executeControllers[0] = new TimeRemainingController();
             _executeControllers[1] = new InputController();
+            _executeControllers[2] = new CameraController();
 
             _cleanUps = new ICleanUp[1];
             _cleanUps[0] = new TimeRemainingCleanUp();
