@@ -57,24 +57,30 @@ namespace ExampleTemplate
          private void Move()
          {
              _characterData.ArrowBehaviour.Fly();
+             Vector2 inputAxis = new Vector2();
              if (Application.platform == RuntimePlatform.WindowsPlayer || Application.platform == RuntimePlatform.WindowsEditor)
              { 
-                 Vector2 inputAxis;
+                 
                  inputAxis.x = Input.GetAxis("Mouse Y");
                  inputAxis.y = Input.GetAxis("Mouse X");
-                 if (inputAxis.x != 0 || inputAxis.y != 0)
-                 {
-                     _characterData.ArrowBehaviour.Turn(inputAxis);
-                 }         
-                 
-                 return;
              }
 
              if (Application.platform == RuntimePlatform.Android)
              {
-                 
-                 //TODO Сделать управлялку под андроид
+                 var touch = Input.GetTouch(0);
+                 if(touch.deltaPosition.x != 0f)
+                 {
+                     inputAxis.y = touch.deltaPosition.x;
+                 }
+                 if(touch.deltaPosition.y != 0f){
+                     inputAxis.x = touch.deltaPosition.y;
+                 }
              }
+             
+             if (inputAxis.x != 0 || inputAxis.y != 0)
+             {
+                 _characterData.ArrowBehaviour.Turn(inputAxis);
+             }   
          }
     }
 }
