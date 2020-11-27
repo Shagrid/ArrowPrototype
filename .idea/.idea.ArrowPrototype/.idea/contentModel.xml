@@ -8,13 +8,72 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Kornienko_Trash" t="Include">
+          <e p="CameraAssets" t="Include">
+            <e p="Demo" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="2D" t="Include">
+                  <e p="Platformer2DUserControl.cs" t="Include" />
+                  <e p="PlatformerCharacter2D.cs" t="Include" />
+                </e>
+                <e p="3D" t="Include">
+                  <e p="ThirdPersonCharacter.cs" t="Include" />
+                  <e p="ThirdPersonUserControl.cs" t="Include" />
+                </e>
+                <e p="CrossPlatformInput" t="Include">
+                  <e p="AxisTouchButton.cs" t="Include" />
+                  <e p="ButtonHandler.cs" t="Include" />
+                  <e p="CrossPlatformInputManager.cs" t="Include" />
+                  <e p="InputAxisScrollbar.cs" t="Include" />
+                  <e p="Joystick.cs" t="Include" />
+                  <e p="MobileControlRig.cs" t="Include" />
+                  <e p="PlatformSpecific" t="Include">
+                    <e p="MobileInput.cs" t="Include" />
+                    <e p="StandaloneInput.cs" t="Include" />
+                  </e>
+                  <e p="TiltInput.cs" t="Include" />
+                  <e p="TouchPad.cs" t="Include" />
+                  <e p="VirtualInput.cs" t="Include" />
+                </e>
+                <e p="UI" t="Include">
+                  <e p="ButtonBehaviour.cs" t="Include" />
+                  <e p="DemoManager.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Manual.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="2D" t="Include">
+                <e p="FlyCamera2D.cs" t="Include" />
+                <e p="MultiTargetCamera.cs" t="Include" />
+                <e p="SmoothFollow2DCamera.cs" t="Include" />
+              </e>
+              <e p="3D" t="Include">
+                <e p="DragCamera.cs" t="Include" />
+                <e p="FlyCamera.cs" t="Include" />
+                <e p="MTPCamera.cs" t="Include" />
+                <e p="OrbitCamera.cs" t="Include" />
+                <e p="RPGCamera.cs" t="Include" />
+                <e p="RTSCamera.cs" t="Include" />
+                <e p="SmoothFollowCamera.cs" t="Include" />
+              </e>
+              <e p="Base" t="Include">
+                <e p="VirtualCamera.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Fly.cs" t="Include" />
+          <e p="ragdoll.cs" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="AssetsPath" t="Include">
+            <e p="AssetsPathCharactersGameObjects.cs" t="Include" />
             <e p="AssetsPathEnemiesGameObject.cs" t="Include" />
             <e p="AssetsPathGameObject.cs" t="Include" />
             <e p="AssetsPathScreen.cs" t="Include" />
           </e>
           <e p="Controllers" t="Include">
+            <e p="CameraController.cs" t="Include" />
             <e p="Controllers.cs" t="Include" />
             <e p="GameController.cs" t="Include" />
             <e p="InputController.cs" t="Include" />
@@ -23,6 +82,7 @@
               <e p="IExecute.cs" t="Include" />
               <e p="IInitialization.cs" t="Include" />
             </e>
+            <e p="LoadLevelController.cs" t="Include" />
             <e p="TimeRemaining" t="Include">
               <e p="ITimeRemaining.cs" t="Include" />
               <e p="TimeRemaining.cs" t="Include" />
@@ -32,6 +92,10 @@
             </e>
           </e>
           <e p="Data" t="Include">
+            <e p="Barriers" t="Include">
+              <e p="BarrierInfo.cs" t="Include" />
+              <e p="BarriersData.cs" t="Include" />
+            </e>
             <e p="Character" t="Include">
               <e p="CharacterData.cs" t="Include" />
             </e>
@@ -91,11 +155,20 @@
           </e>
           <e p="LoadLevelFromEditor.cs" t="Include" />
           <e p="Model" t="Include">
+            <e p="Camera" t="Include">
+              <e p="CameraBehaviour.cs" t="Include" />
+            </e>
             <e p="Character" t="Include">
+              <e p="ArrowBehaviour.cs" t="Include" />
               <e p="CharacterBehaviour.cs" t="Include" />
+              <e p="GameModeType.cs" t="Include" />
             </e>
             <e p="Enemy" t="Include">
               <e p="EnemyBehaviour.cs" t="Include" />
+            </e>
+            <e p="Score" t="Include">
+              <e p="BarrierCoefficient.cs" t="Include" />
+              <e p="BodyPoint.cs" t="Include" />
             </e>
           </e>
           <e p="Services" t="Include">
@@ -103,7 +176,6 @@
               <e p="CameraServices.cs" t="Include" />
             </e>
             <e p="LevelService" t="Include">
-              <e p="LevelDataService.cs" t="Include" />
               <e p="LevelLoadService.cs" t="Include" />
             </e>
             <e p="LocalizationService" t="Include">
@@ -125,6 +197,8 @@
             </e>
           </e>
           <e p="Type" t="Include">
+            <e p="BarrierType.cs" t="Include" />
+            <e p="CharacterType.cs" t="Include" />
             <e p="EnemyType.cs" t="Include" />
             <e p="GameObjectType.cs" t="Include" />
             <e p="LevelType.cs" t="Include" />
@@ -171,6 +245,11 @@
               <e p="Terrain Assets" t="Include">
                 <e p="ThirdPartyNotices.txt" t="Include" />
               </e>
+            </e>
+          </e>
+          <e p="UIParticleEffects" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="UIParticleSystem.cs" t="Include" />
             </e>
           </e>
           <e p="Unity-chan! Model" t="Include">

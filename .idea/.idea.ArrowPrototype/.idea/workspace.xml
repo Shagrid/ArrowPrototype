@@ -43,6 +43,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../PlayerHP.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D815B7EF-AC42-4EEB-8E05-3965CCCB1F98/f9/a77134f8/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78F1AD0F-25C8-4E3C-A853-E639F50D95F5/bf/530fb1c4/CustomEditor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -64,7 +65,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/LevelController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Enemies.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AssetsPath/AssetsPathEnemiesGameObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Enemy/EnemyBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Sergey_M.Trash/LoadLevelFromEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/LoadLevelFromEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/LoadLevelButton.cs" />
@@ -72,6 +72,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Services/LevelService/LevelLoadService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Data.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/Enemies/EnemiesData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Score/BarrierCoefficient.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Score/BodyPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Model/Enemy/EnemyBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -127,6 +130,7 @@
       <workItem from="1605036894468" duration="197000" />
       <workItem from="1605205910751" duration="2131000" />
       <workItem from="1605261144438" duration="8495000" />
+      <workItem from="1606483045319" duration="1574000" />
     </task>
     <servers />
   </component>

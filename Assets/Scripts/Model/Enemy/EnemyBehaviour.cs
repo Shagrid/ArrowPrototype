@@ -8,6 +8,7 @@ namespace Model.Enemy
     {
         private Animator _animator;
         private Rigidbody[] _rigidbodies;
+        private int _score = 0;
 
         #region Properties
 
@@ -41,6 +42,18 @@ namespace Model.Enemy
         {
             _animator.enabled = activityState;
             //_rigidbodies[0].isKinematic = !activityState;
+        }
+
+        public void AddPoint(int points)
+        {
+            _score += points;
+        }
+        
+        private void OnGUI()
+        {
+            GUILayout.BeginArea(new Rect(Screen.width - 150, 0, 150, 150));
+            GUILayout.Label("SCORE: " + _score);
+            GUILayout.EndArea();    
         }
     }
 }

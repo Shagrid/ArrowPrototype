@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ExampleTemplate.Model.Score
+namespace ExampleTemplate
 {
     public class BarrierCoefficient : MonoBehaviour
     {

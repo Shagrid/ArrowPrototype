@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715a66ab18a45af42876cd750d982751, type: 3}
   m_Name: CharacterData
   m_EditorClassIdentifier: 
-  _speedArrow: 1
+  _speedArrow: 5
   _turnSensivity: 2
+  _forceImpuls: 15000
   CharacterBehaviour: {fileID: 0}
   ArrowBehaviour: {fileID: 0}
