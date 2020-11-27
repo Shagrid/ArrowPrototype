@@ -9,6 +9,12 @@ namespace Model.Enemy
         private Animator _animator;
         private Rigidbody[] _rigidbodies;
 
+        #region Properties
+
+        public Rigidbody[] Rigidbody => _rigidbodies;
+
+        #endregion
+
         private void Awake()
         {
             _animator = GetComponent<Animator>();
