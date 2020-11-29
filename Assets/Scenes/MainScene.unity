@@ -235,10 +235,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   offset: {x: 0, y: 1, z: 2}
+  offset2: {x: 2, y: 4, z: 0}
   heightDamping: 2
   rotationSnapTime: 0.3
   distanceSnapTime: 0
   TimeMoving: 1
+  smooth: 5
 --- !u!1 &831383597
 GameObject:
   m_ObjectHideFlags: 0
