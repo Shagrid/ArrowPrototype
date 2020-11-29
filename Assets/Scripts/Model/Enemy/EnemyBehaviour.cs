@@ -1,14 +1,18 @@
 ﻿using System;
 using ExampleTemplate;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Model.Enemy
 {
     public class EnemyBehaviour : MonoBehaviour
     {
+        [SerializeField] SetScore _uiscore;
         private Animator _animator;
         private Rigidbody[] _rigidbodies;
         private int _score = 0;
+        
+        
 
         #region Properties
 
@@ -16,14 +20,20 @@ namespace Model.Enemy
 
         #endregion
 
+
         private void Awake()
         {
             _animator = GetComponent<Animator>();
             _rigidbodies = GetComponentsInChildren<Rigidbody>();
             SetRagdollState(false);
             SetMainPhysics(true);
+            _uiscore = GameObject.FindWithTag("Score").GetComponent<SetScore>();
         }
 
+        public void Update()
+        {            
+            _uiscore.InstantiateScore(_score);
+        }
         public void Die()
         {
             SetRagdollState(true);
@@ -49,11 +59,11 @@ namespace Model.Enemy
             _score += points;
         }
         
-        private void OnGUI()
-        {
-            GUILayout.BeginArea(new Rect(Screen.width - 150, 0, 150, 150));
-            GUILayout.Label("SCORE: " + _score);
-            GUILayout.EndArea();    
-        }
+        //private void OnGUI()
+        //{
+        //    GUILayout.BeginArea(new Rect(Screen.width - 150, 0, 150, 150));
+        //    GUILayout.Label("SCORE: " + _score);
+        //    GUILayout.EndArea();    
+        //}
     }
 }

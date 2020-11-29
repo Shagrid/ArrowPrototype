@@ -17,3 +17,5 @@ MonoBehaviour:
     Coefficient: 1
   - BarrierType: 2
     Coefficient: 1
+  - BarrierType: 3
+    Coefficient: 10
