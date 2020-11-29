@@ -37,11 +37,11 @@ namespace ExampleTemplate
 
         public void Execute()
         {
-            if (_characterData.CharacterBehaviour.GameMode == GameModeType.ArrowFly)
-            {
-                _cameraBehaviour.FollowToTarget(_characterData.ArrowBehaviour.transform);
-                //_cameraBehaviour.TestCamera(_characterData.ArrowBehaviour.transform);
-            }
+            // if (_characterData.CharacterBehaviour.GameMode == GameModeType.ArrowFly)
+            // {
+            //     _cameraBehaviour.FollowToTarget(_characterData.ArrowBehaviour.transform);
+            //     //_cameraBehaviour.TestCamera(_characterData.ArrowBehaviour.transform);
+            // }
             if (_characterData.CharacterBehaviour.GameMode == GameModeType.Ragdoll)
             {
                 //_cameraBehaviour.FollowToTarget(_enemiesData.EnemyBehaviour.Rigidbody[0].transform);

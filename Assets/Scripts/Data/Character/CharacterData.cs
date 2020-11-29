@@ -10,6 +10,7 @@ namespace ExampleTemplate
         [SerializeField] private float _speedArrow = 1f;
         [SerializeField] private float _turnSensivity = 2f;
         [SerializeField] private float _forceImpuls = 3000f;
+        [SerializeField] private float _speedRotateArrow = 300f;
 
         [HideInInspector] public CharacterBehaviour CharacterBehaviour;
         [HideInInspector] public ArrowBehaviour ArrowBehaviour;
@@ -38,6 +39,10 @@ namespace ExampleTemplate
         public float GetForceimpulse()
         {
             return _forceImpuls;
+        }
+        public float GetSpeedRotateArrow()
+        {
+            return _speedRotateArrow;
         }
     }
     

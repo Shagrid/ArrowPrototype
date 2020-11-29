@@ -50,6 +50,7 @@ namespace ExampleTemplate
                      _characterData.ArrowBehaviour.transform.SetParent(null);
                      _arrowRb = _characterData.ArrowBehaviour.transform.GetComponent<Rigidbody>();
                      _arrowRb.isKinematic = false;
+                     _characterData.ArrowBehaviour.FollowArrow(true);
                  }
                  
          }
