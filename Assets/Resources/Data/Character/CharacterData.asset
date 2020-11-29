@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speedArrow: 2
   _turnSensivity: 0.5
-  _forceImpuls: 15000
+  _forceImpuls: 100000
   _speedRotateArrow: -300
   CharacterBehaviour: {fileID: 0}
   ArrowBehaviour: {fileID: 0}
