@@ -20,19 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f4bc921-a8b9-474b-ad46-8fa2e3a7b653" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/LevelService/LevelDataService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/LevelService/LevelDataService.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/LevelService/LevelLoadService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/LevelService/LevelLoadService.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArrowPrototype/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArrowPrototype/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArrowPrototype/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArrowPrototype/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArrowPrototype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArrowPrototype/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Kornienko_Trash/New Physic Material.physicMaterial" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Kornienko_Trash/New Physic Material.physicMaterial" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Character/CharacterData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/Character/CharacterData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Levels/LevelsData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/Levels/LevelsData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Level/LevelData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/Level/LevelData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Data/Level/LevelsData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Data/Level/LevelsData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helper/Manageres/TagManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helper/Manageres/TagManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Helper/Manageres/TagType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Helper/Manageres/TagType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/Services.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/Services.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sergey_M.Trash/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sergey_M.Trash/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefabs/Levels/TestTerrain2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Levels/TestTerrain2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Controllers/LoadLevelController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Controllers/LoadLevelController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +40,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../PlayerHP.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D815B7EF-AC42-4EEB-8E05-3965CCCB1F98/f9/a77134f8/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/78F1AD0F-25C8-4E3C-A853-E639F50D95F5/bf/530fb1c4/CustomEditor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -75,6 +69,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/Score/BarrierCoefficient.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/Score/BodyPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/Enemy/EnemyBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controllers/LoadLevelController.cs" />
       </list>
     </option>
   </component>
@@ -131,6 +126,7 @@
       <workItem from="1605205910751" duration="2131000" />
       <workItem from="1605261144438" duration="8495000" />
       <workItem from="1606483045319" duration="1574000" />
+      <workItem from="1606842128799" duration="2290000" />
     </task>
     <servers />
   </component>

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: CharacterData
   m_EditorClassIdentifier: 
   _speedArrow: 2
-  _turnSensivity: 0.5
-  _forceImpuls: 80000
+  _turnSensivity: 0.2
+  _forceImpuls: 25000
   _speedRotateArrow: -300
   CharacterBehaviour: {fileID: 0}
   ArrowBehaviour: {fileID: 0}

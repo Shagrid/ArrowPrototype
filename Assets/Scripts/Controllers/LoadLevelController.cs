@@ -4,7 +4,7 @@
     {
         public void Initialization()
         {
-            Services.Instance.LevelLoadService.LoadLevel(LevelType.TestLevelAlex, EnemyType.Kobayashi, CharacterType.Archer);
+            Services.Instance.LevelLoadService.LoadLevel(LevelType.TestLevel, EnemyType.Kobayashi, CharacterType.Archer);
         }
     }
 }

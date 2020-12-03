@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\shagrid\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\shagrid\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ArrowPrototype.-1033811379.00" t="ExcludeRecursive" />
-    <e p="D:\Projects\unity\ArrowPrototype" t="IncludeRecursive">
+    <e p="C:\Users\shagr\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\shagr\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_ArrowPrototype.141776981.00" t="ExcludeRecursive" />
+    <e p="D:\MyPrograms\ArrowPrototype" t="IncludeRecursive">
       <e p="ArrowPrototype.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="AlexGM.Trash" t="Include">
+          <e p="Bariers" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="SyntyStudios_LOD.shader" t="Include" />
+              <e p="SyntyStudios_Moss.shader" t="Include" />
+              <e p="SyntyStudios_SkyGradient.shader" t="Include" />
+              <e p="SyntyStudios_Trees.shader" t="Include" />
+              <e p="SyntyStudios_Vines.shader" t="Include" />
+              <e p="SyntyStudios_Water.shader" t="Include" />
+              <e p="VS_indirect.cginc" t="Include" />
+            </e>
+          </e>
+          <e p="SetScore.cs" t="Include" />
+          <e p="TGU Skybox Pack" t="Include">
+            <e p="Readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Christmas" t="Include">
+          <e p="Textures" t="Include">
+            <e p="Color Schemes Readme.txt" t="Include" />
+          </e>
+        </e>
         <e p="Kornienko_Trash" t="Include">
           <e p="CameraAssets" t="Include">
             <e p="Demo" t="Include">
@@ -300,6 +322,11 @@
                 <e p="SplashScreen.cs" t="Include" />
               </e>
             </e>
+          </e>
+        </e>
+        <e p="Treasurechest" t="Include">
+          <e p="Read me" t="Include">
+            <e p="Readme.txt" t="Include" />
           </e>
         </e>
       </e>

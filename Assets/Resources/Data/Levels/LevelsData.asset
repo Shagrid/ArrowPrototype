@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levels:
   - LevelType: 1
-    LocationPrefab: {fileID: 4093755596160198143, guid: b2e812a9e1a542548a18b51b78ca720e,
+    LocationPrefab: {fileID: 8560951321714968609, guid: 04ae5abea0092584fa00a82bdcb4a3e2,
       type: 3}
   - LevelType: 2
     LocationPrefab: {fileID: 8560951321714968609, guid: 81d7575dc5bd8d04a8745b6532f8d305,
