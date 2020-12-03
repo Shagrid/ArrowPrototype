@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715a66ab18a45af42876cd750d982751, type: 3}
   m_Name: CharacterData
   m_EditorClassIdentifier: 
-  _speedArrow: 2
-  _turnSensivity: 0.2
-  _forceImpuls: 25000
-  _speedRotateArrow: -300
+  _speedArrow: 3
+  _turnSensivity: 0.5
+  _forceImpuls: 60000
+  _speedRotateArrow: -2000
   CharacterBehaviour: {fileID: 0}
   ArrowBehaviour: {fileID: 0}
