@@ -79,9 +79,6 @@
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/MyPrograms/ArrowPrototype/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.TerrainTools">
- <HintPath>D:/Writer/ArrowPrototype/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
- </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>D:/MyPrograms/ArrowPrototype/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
@@ -109,11 +106,14 @@
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/MyPrograms/ArrowPrototype/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
- <Reference Include="Unity.TerrainTools.Editor">
- <HintPath>D:/Writer/ArrowPrototype/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
- </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/MyPrograms/ArrowPrototype/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TerrainTools">
+ <HintPath>D:/MyPrograms/ArrowPrototype/Library/ScriptAssemblies/Unity.TerrainTools.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TerrainTools.Editor">
+ <HintPath>D:/MyPrograms/ArrowPrototype/Library/ScriptAssemblies/Unity.TerrainTools.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
