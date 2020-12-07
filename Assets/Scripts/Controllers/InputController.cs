@@ -6,13 +6,14 @@ namespace ExampleTemplate
 {
     public sealed class InputController : IExecute
     {
-         private readonly CharacterData _characterData;
-         private Rigidbody _arrowRb;
-         
-         public InputController()
+        private readonly CharacterData _characterData;
+        private readonly EnemiesData _enemiesData;
+        private Rigidbody _arrowRb;
+
+        public InputController()
         {
             _characterData = Data.Instance.Character;
-            
+            _enemiesData = Data.Instance.EnemiesData;
         }
         
          #region IExecute
@@ -32,7 +33,7 @@ namespace ExampleTemplate
                     break;
                 case GameModeType.ArrowFly: Move();
                     break;
-                case GameModeType.Ragdoll:
+                case GameModeType.Ragdoll:Impulse();
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -83,5 +84,13 @@ namespace ExampleTemplate
                  _characterData.ArrowBehaviour.Turn(inputAxis);
              }   
          }
+
+        private void Impulse()
+        {
+            if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
+            {
+                _enemiesData.EnemyBehaviour.TossUp();
+            }
+        }
     }
 }

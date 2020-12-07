@@ -11,12 +11,15 @@ namespace Model.Enemy
         private Animator _animator;
         private Rigidbody[] _rigidbodies;
         private int _score = 0;
-        
-        
+        private RaycastHit _hit;
+        private int _enemyLayer = 1 << 9;
+
+
 
         #region Properties
 
         public Rigidbody[] Rigidbody => _rigidbodies;
+        public int Score => _score;
 
         #endregion
 
@@ -58,7 +61,23 @@ namespace Model.Enemy
         {
             _score += points;
         }
-        
+
+        public void TossUp()
+        {
+            if (!_animator.isActiveAndEnabled && IsGround())
+            {
+                gameObject.GetComponentInChildren<Rigidbody>().AddForce(0, 400, 0, ForceMode.Impulse);
+            }
+        }
+        bool IsGround()
+        {
+            if (Physics.Raycast(_rigidbodies[0].transform.position, Vector3.down, out _hit, 0.3f, ~_enemyLayer))
+            {
+                return true;
+            }
+            else return false;
+        }
+
         //private void OnGUI()
         //{
         //    GUILayout.BeginArea(new Rect(Screen.width - 150, 0, 150, 150));
