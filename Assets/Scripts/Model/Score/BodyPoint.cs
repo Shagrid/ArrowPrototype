@@ -1,5 +1,6 @@
 ﻿using Model.Enemy;
 using UnityEngine;
+using System;
 
 namespace ExampleTemplate
 {
@@ -8,6 +9,7 @@ namespace ExampleTemplate
         [SerializeField] private int BaseScore = 100;
         private EnemyBehaviour _enemy;
         private int _lastCollisionObject;
+        public static Action<Vector3, string, Color> OnScoreChanged;
 
         private void Awake()
         {
@@ -23,6 +25,7 @@ namespace ExampleTemplate
                 var points = BaseScore * barrier.GetCoefficient();
                 _lastCollisionObject = other.GetHashCode();
                 _enemy.AddPoint((int)points);
+                OnScoreChanged?.Invoke(gameObject.transform.position, _enemy.Score.ToString(), Color.red);
             }
         }
     }
