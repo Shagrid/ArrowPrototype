@@ -9,6 +9,7 @@ TagManager:
   - EnemyPosition
   - Score
   - Ground
+  - CameraPosition
   layers:
   - Default
   - TransparentFX

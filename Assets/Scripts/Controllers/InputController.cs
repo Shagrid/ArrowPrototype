@@ -4,16 +4,18 @@ using UnityEngine;
 
 namespace ExampleTemplate
 {
-    public sealed class InputController : IExecute
+    public sealed class InputController : IExecute,IListenerScreen
     {
         private readonly CharacterData _characterData;
         private readonly EnemiesData _enemiesData;
         private Rigidbody _arrowRb;
+        private bool _isActive;
 
         public InputController()
         {
             _characterData = Data.Instance.Character;
             _enemiesData = Data.Instance.EnemiesData;
+            ScreenInterface.GetInstance().AddObserver(ScreenType.GameMenu, this);
         }
         
          #region IExecute
@@ -24,6 +26,7 @@ namespace ExampleTemplate
             {
                 return;
             }
+            if (!_isActive) { return; }
 
             switch (_characterData.CharacterBehaviour.GameMode)
             {
@@ -92,5 +95,19 @@ namespace ExampleTemplate
                 _enemiesData.EnemyBehaviour.TossUp();
             }
         }
+
+        #region IListenerScreen
+
+        public void ShowScreen()
+        {
+            _isActive = true;
+        }
+
+        public void HideScreen()
+        {
+            _isActive = false;
+        }
+
+        #endregion
     }
 }

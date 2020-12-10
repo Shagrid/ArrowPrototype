@@ -13,6 +13,7 @@ namespace Model.Enemy
         private int _score = 0;
         private RaycastHit _hit;
         private int _enemyLayer = 1 << 9;
+        public static event Action<int> OnScoreChanchedUi;
 
 
 
@@ -34,8 +35,8 @@ namespace Model.Enemy
         }
 
         public void Update()
-        {            
-            _uiscore.InstantiateScore(_score);
+        {
+            //_uiscore.InstantiateScore(_score);
         }
         public void Die()
         {
@@ -60,6 +61,7 @@ namespace Model.Enemy
         public void AddPoint(int points)
         {
             _score += points;
+            OnScoreChanchedUi?.Invoke(_score);
         }
 
         public void TossUp()

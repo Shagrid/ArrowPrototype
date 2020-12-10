@@ -37,6 +37,10 @@ namespace ExampleTemplate
 
         public void Execute()
         {
+            if (_characterData.CharacterBehaviour.GameMode == GameModeType.Start)
+            {
+                _cameraBehaviour.StartCamera(_characterData.CharacterBehaviour.transform);
+            }
             // if (_characterData.CharacterBehaviour.GameMode == GameModeType.ArrowFly)
             // {
             //     _cameraBehaviour.FollowToTarget(_characterData.ArrowBehaviour.transform);

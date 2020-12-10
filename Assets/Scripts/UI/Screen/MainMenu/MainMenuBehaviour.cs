@@ -10,7 +10,6 @@ namespace ExampleTemplate
         
         [SerializeField] private Button _startGameButton;
         [SerializeField] private Button _settingsButton;
-        [SerializeField] private Text _currentLevelLabel;
         
         private LocationService _locationService;
         

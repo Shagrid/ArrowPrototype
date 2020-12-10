@@ -7,5 +7,6 @@
         Floor  = 2,
         CharacterPosition = 3,
         EnemyPosition = 4
+
     }
 }
