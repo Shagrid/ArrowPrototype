@@ -18,7 +18,7 @@ namespace ExampleTemplate
         {
             _controllers = new Controllers();
             Initialization();
-            //ScreenInterface.GetInstance().Execute(ScreenType.MainMenu);
+            ScreenInterface.GetInstance().Execute(ScreenType.MainMenu);
         }
 
         private void Update()

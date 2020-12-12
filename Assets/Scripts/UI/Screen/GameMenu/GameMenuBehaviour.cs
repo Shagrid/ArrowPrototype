@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
+using Model.Enemy;
 
 namespace ExampleTemplate
 {
     public sealed class GameMenuBehaviour : BaseUi
     {
         #region Fields
-        
-        [SerializeField] private Button _button;
+
+        [SerializeField] private Button _menuButton;
+        [SerializeField] private Button _restartLevelButton;
+        [SerializeField] private Text _scoreCount;
+
         
         #endregion
 
@@ -17,12 +20,16 @@ namespace ExampleTemplate
 
         private void OnEnable()
         {
-            _button.onClick.AddListener(Call);
+            _menuButton.onClick.AddListener(Call);
+            _restartLevelButton.onClick.AddListener(RestartLevel);
+            EnemyBehaviour.OnScoreChanchedUi += TextScore;
         }
 
         private void OnDisable()
         {
-            _button.onClick.RemoveListener(Call);
+            _menuButton.onClick.RemoveListener(Call);
+            _restartLevelButton.onClick.RemoveListener(RestartLevel);
+            EnemyBehaviour.OnScoreChanchedUi -= TextScore;
         }
 
         #endregion
@@ -45,6 +52,14 @@ namespace ExampleTemplate
         private void Call()
         {
             ScreenInterface.GetInstance().Execute(ScreenType.MainMenu);
+        }
+        private void RestartLevel()
+        {
+            Services.Instance.LevelLoadService.LoadLevel();
+        }
+        private void TextScore(int score)
+        {
+            _scoreCount.text = score.ToString();
         }
 
         #endregion

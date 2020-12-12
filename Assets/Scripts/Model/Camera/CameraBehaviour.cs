@@ -11,6 +11,7 @@ namespace Model.Camera
         [Tooltip("Current relative offset to the target.")]
         public Vector3 offset = new Vector3(0, 1, 2);
         public Vector3 offset2 = new Vector3(0, 3, 0);
+        public Vector3 StartOffset = new Vector3(0, 2, 3);
         [Tooltip("Smoothing factor for rapid changes on the Y-axis.")]
         public float heightDamping = 2.0f;
         [Tooltip("Smoothing factor for the rotation.")]
@@ -58,6 +59,11 @@ namespace Model.Camera
         //
         //     transform.LookAt(target.position);
         // }
+        public void StartCamera(Transform target)
+        {
+            gameObject.transform.position = target.position+StartOffset;
+            gameObject.transform.rotation = target.rotation;
+        }
         
         public void FollowToTarget(Transform target)
         {
