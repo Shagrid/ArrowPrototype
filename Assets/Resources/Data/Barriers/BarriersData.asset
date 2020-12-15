@@ -15,7 +15,10 @@ MonoBehaviour:
   _barriers:
   - BarrierType: 1
     Coefficient: 1
+    DamageCoefficient: 1
   - BarrierType: 2
     Coefficient: 1
+    DamageCoefficient: 1
   - BarrierType: 3
     Coefficient: 10
+    DamageCoefficient: 2

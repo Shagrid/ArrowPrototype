@@ -7,5 +7,6 @@ namespace ExampleTemplate
     {
         public BarrierType BarrierType;
         public float Coefficient;
+        public float DamageCoefficient;
     }
 }

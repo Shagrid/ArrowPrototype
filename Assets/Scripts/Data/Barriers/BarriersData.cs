@@ -17,5 +17,12 @@ namespace ExampleTemplate
                 throw new ArgumentException($"Нет данных для препятствия: {barrierType}");
             return result.Coefficient;
         }
+        public float GetDamageCoefficient(BarrierType barrierType)
+        {
+            var result = _barriers.SingleOrDefault(x => x.BarrierType == barrierType);
+            if (result == null)
+                throw new ArgumentException($"Нет данных для препятствия: {barrierType}");
+            return result.DamageCoefficient;
+        }
     }
 }

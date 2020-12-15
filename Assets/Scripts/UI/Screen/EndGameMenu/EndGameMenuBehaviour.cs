@@ -4,15 +4,14 @@ using Model.Enemy;
 
 namespace ExampleTemplate
 {
-    public sealed class GameMenuBehaviour : BaseUi
+    public class EndGameMenuBehaviour : BaseUi
     {
         #region Fields
 
         [SerializeField] private Button _menuButton;
         [SerializeField] private Button _restartLevelButton;
         [SerializeField] private Text _scoreCount;
-        [SerializeField] private Image _healthImage;
-        
+
         #endregion
 
 
@@ -20,12 +19,9 @@ namespace ExampleTemplate
 
         private void OnEnable()
         {
-            Time.timeScale = 1f;
             _menuButton.onClick.AddListener(Call);
             _restartLevelButton.onClick.AddListener(RestartLevel);
             EnemyBehaviour.OnScoreChangedUi += TextScore;
-            EnemyBehaviour.OnHealthChangedUi += HealthShow;
-            EnemyBehaviour.OnDeath += EndGameMenuCall;
         }
 
         private void OnDisable()
@@ -33,12 +29,10 @@ namespace ExampleTemplate
             _menuButton.onClick.RemoveListener(Call);
             _restartLevelButton.onClick.RemoveListener(RestartLevel);
             EnemyBehaviour.OnScoreChangedUi -= TextScore;
-            EnemyBehaviour.OnHealthChangedUi -= HealthShow;
-            EnemyBehaviour.OnDeath -= EndGameMenuCall;
         }
 
         #endregion
-        
+
 
         #region Methods
 
@@ -61,18 +55,11 @@ namespace ExampleTemplate
         private void RestartLevel()
         {
             Services.Instance.LevelLoadService.LoadLevel();
+            ScreenInterface.GetInstance().Execute(ScreenType.GameMenu);
         }
         private void TextScore(int score)
         {
             _scoreCount.text = score.ToString();
-        }
-        private void HealthShow(float health)
-        {
-            _healthImage.fillAmount = health;
-        }
-        private void EndGameMenuCall()
-        {
-            ScreenInterface.GetInstance().Execute(ScreenType.EndGameMenu);
         }
 
         #endregion
