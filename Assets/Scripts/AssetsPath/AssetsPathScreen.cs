@@ -37,7 +37,14 @@ namespace ExampleTemplate
                     Screen = "GUI/Screen/GameMenu/GUI_Screen_GameMenu",
                     Elements = new Dictionary<ScreenElementType, string>()
                 }
-            }
+            },
+            {
+                ScreenType.EndGameMenu, new ScreenPath
+                {
+                    Screen = "GUI/Screen/EndGameMenu/GUI_Screen_EndGameMenu",
+                    Elements = new Dictionary<ScreenElementType, string>()
+                }
+            },
         };
 
         #endregion

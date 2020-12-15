@@ -53,6 +53,9 @@ namespace ExampleTemplate
                 case ScreenType.MainMenu:
                     _currentWindow = _screenFactory.GetMainMenu();
                     break;
+                case ScreenType.EndGameMenu:
+                    _currentWindow = _screenFactory.GetEndGameMenu();
+                    break;
 
                 default:
                     break;
@@ -75,6 +78,11 @@ namespace ExampleTemplate
                     _screenFactory.GetMainMenu().HideUI += listenerScreen.HideScreen;
                     _screenFactory.GetMainMenu().Hide();
                     break;
+                case ScreenType.EndGameMenu:
+                    _screenFactory.GetEndGameMenu().ShowUI += listenerScreen.ShowScreen;
+                    _screenFactory.GetEndGameMenu().HideUI += listenerScreen.HideScreen;
+                    _screenFactory.GetEndGameMenu().Hide();
+                    break;
 
                 default:
                     break;
@@ -94,6 +102,11 @@ namespace ExampleTemplate
                     _screenFactory.GetMainMenu().ShowUI -= listenerScreen.ShowScreen;
                     _screenFactory.GetMainMenu().HideUI -= listenerScreen.HideScreen;
                     _screenFactory.GetMainMenu().Hide();
+                    break;
+                case ScreenType.EndGameMenu:
+                    _screenFactory.GetEndGameMenu().ShowUI -= listenerScreen.ShowScreen;
+                    _screenFactory.GetEndGameMenu().HideUI -= listenerScreen.HideScreen;
+                    _screenFactory.GetEndGameMenu().Hide();
                     break;
 
                 default:

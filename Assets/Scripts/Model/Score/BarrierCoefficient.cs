@@ -10,5 +10,9 @@ namespace ExampleTemplate
         {
             return Data.Instance.BarriersData.GetCoefficient(_barrierType);
         }
+        public float GetDamageCoefficient()
+        {
+            return Data.Instance.BarriersData.GetDamageCoefficient(_barrierType);
+        }
     }
 }

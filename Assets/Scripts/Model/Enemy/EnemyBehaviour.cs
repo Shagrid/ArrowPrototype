@@ -8,12 +8,18 @@ namespace Model.Enemy
     public class EnemyBehaviour : MonoBehaviour
     {
         [SerializeField] SetScore _uiscore;
+
         private Animator _animator;
         private Rigidbody[] _rigidbodies;
-        private int _score = 0;
+        private EnemiesData _enemiesData;
         private RaycastHit _hit;
         private int _enemyLayer = 1 << 9;
-        public static event Action<int> OnScoreChanchedUi;
+        private int _score = 0;
+        private int _health;
+
+        public static event Action<int> OnScoreChangedUi;
+        public static event Action<float> OnHealthChangedUi;
+        public static event Action OnDeath;
 
 
 
@@ -31,7 +37,10 @@ namespace Model.Enemy
             _rigidbodies = GetComponentsInChildren<Rigidbody>();
             SetRagdollState(false);
             SetMainPhysics(true);
-            _uiscore = GameObject.FindWithTag("Score").GetComponent<SetScore>();
+            _enemiesData = Data.Instance.EnemiesData;
+            _health = _enemiesData.GetHealth();
+
+            //_uiscore = GameObject.FindWithTag("Score").GetComponent<SetScore>();
         }
 
         public void Update()
@@ -43,7 +52,7 @@ namespace Model.Enemy
             SetRagdollState(true);
             SetMainPhysics(false);
         }
-        
+
         private void SetRagdollState(bool activityState)
         {
             for (int i = 0; i < _rigidbodies.Length; i++)
@@ -58,10 +67,30 @@ namespace Model.Enemy
             //_rigidbodies[0].isKinematic = !activityState;
         }
 
+        private bool IsGround()
+        {
+            if (Physics.Raycast(_rigidbodies[0].transform.position, Vector3.down, out _hit, 0.3f, ~_enemyLayer))
+            {
+                return true;
+            }
+            else return false;
+        }
+
         public void AddPoint(int points)
         {
             _score += points;
-            OnScoreChanchedUi?.Invoke(_score);
+            OnScoreChangedUi?.Invoke(_score);
+        }
+
+        public void HealthDecrease(int damage) 
+        {
+            _health -= damage;
+            if (_health <= 0) { Death(); }
+            OnHealthChangedUi?.Invoke((float)_health / _enemiesData.GetHealth());
+        }
+        public void Death()
+        {
+            OnDeath?.Invoke();
         }
 
         public void TossUp()
@@ -70,14 +99,6 @@ namespace Model.Enemy
             {
                 gameObject.GetComponentInChildren<Rigidbody>().AddForce(0, 400, 0, ForceMode.Impulse);
             }
-        }
-        bool IsGround()
-        {
-            if (Physics.Raycast(_rigidbodies[0].transform.position, Vector3.down, out _hit, 0.3f, ~_enemyLayer))
-            {
-                return true;
-            }
-            else return false;
         }
 
         //private void OnGUI()

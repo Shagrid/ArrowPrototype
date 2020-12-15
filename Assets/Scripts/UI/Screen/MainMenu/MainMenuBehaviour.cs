@@ -22,6 +22,7 @@ namespace ExampleTemplate
         {
             _startGameButton.onClick.AddListener(StartGameButtonClick);
             _settingsButton.onClick.AddListener(ShowSettingsButtonClick);
+            Time.timeScale = 0f;
         }
 
         private void OnDisable()

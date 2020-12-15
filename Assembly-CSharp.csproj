@@ -175,6 +175,7 @@
     <Compile Include="Assets\Scripts\UI\BaseUi.cs" />
     <Compile Include="Assets\Scripts\UI\Interfaces\IListenerScreen.cs" />
     <Compile Include="Assets\Scripts\UI\Interfaces\IPartUI.cs" />
+    <Compile Include="Assets\Scripts\UI\Screen\EndGameMenu\EndGameMenuBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\GameMenu\GameMenuBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\MainMenu\MainMenuBehaviour.cs" />
     <Compile Include="Assets\Scripts\UI\Screen\ScreenFactory.cs" />

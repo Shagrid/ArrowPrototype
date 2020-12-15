@@ -9,6 +9,7 @@ namespace ExampleTemplate
 
         private GameMenuBehaviour _gameMenu;
         private MainMenuBehaviour _mainMenu;
+        private EndGameMenuBehaviour _endGameMenu;
         private Canvas _canvas;
 
         #endregion
@@ -45,6 +46,16 @@ namespace ExampleTemplate
                 _mainMenu = Object.Instantiate(resources, _canvas.transform.position, Quaternion.identity, _canvas.transform);
             }
             return _mainMenu;
+        }
+
+        public EndGameMenuBehaviour GetEndGameMenu()
+        {
+            if (_endGameMenu == null)
+            {
+                var resources = CustomResources.Load<EndGameMenuBehaviour>(AssetsPathScreen.Screens[ScreenType.EndGameMenu].Screen);
+                _endGameMenu = Object.Instantiate(resources, _canvas.transform.position, Quaternion.identity, _canvas.transform);
+            }
+            return _endGameMenu;
         }
 
         #endregion
